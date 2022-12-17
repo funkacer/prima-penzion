@@ -1,0 +1,255 @@
+body,
+input,
+textarea,
+select {
+    font-family: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a, .socIkony i, input {
+    transition: 0.3s all ease-in-out;
+}
+a:hover {
+    color: #b30000;
+    text-decoration: underline;
+}
+img,
+iframe {
+    vertical-align: top;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+section .container {
+    width: 70%;
+}
+.fa-facebook:hover {
+    color: #1877F2;
+}
+.fa-instagram:hover {
+    color: #E4405F;
+}
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center;
+}
+.socIkony {
+    font-size: 22px;
+}
+.logo {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 10px;
+    display: inline-block;
+}
+.logo:hover {
+    text-decoration: none;
+}
+header {
+    text-align: center;
+}
+header img {
+    width: 100%;
+}
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    list-style: none;
+    padding: 40px 0;
+}
+.menu ul li a {
+    text-transform: uppercase;
+    padding: 0 5px 10px;
+}
+.menu ul li a:hover {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 3px solid #b30000;
+}
+
+@media screen and (max-width: 700px){
+    .menu ul {
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 450px){
+    .menu ul {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 350px){
+    .headerTop {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/*Section*/
+.obsah {
+    text-align: center;
+    padding-bottom: 150px;
+}
+h1 {
+    font-size: 50px;
+    padding: 70px 0 30px;
+}
+.obsah h2 {
+    color: #a57a5b;
+    padding-bottom: 20px;
+}
+section p {
+    line-height: 1.7;
+}
+/*Pata*/
+.pata {
+    background: #eaeaea;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.pata .socIkony {
+    font-size: 40px;
+}
+.pataRef {
+    padding: 25px 0 15px;
+}
+.pataRef p {
+    padding-bottom: 10px;
+}
+.pataRef i,
+.kontakt i {
+    padding-right: 15px;
+}
+.strongRef b {
+    color:#b40000
+}
+.copy .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/*Kontakt*/
+.kontakt {
+    margin: 100px 0;
+    text-align: center;
+}
+.grey {
+    background: #eaeaea;
+    padding: 0 20px 70px;
+}
+.kontaktFlex {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.karty i {
+    padding-right: 0;
+    font-size: 40px;
+}
+
+.kontakt iframe {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.grey h2 {
+    padding: 40px 0;
+}
+
+.grey input[type="text"],
+.grey input[type="email"],
+.grey input[type="tel"],
+.grey textarea,
+.grey select {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 auto 10px;
+    color: #858585; /*kvuli select*/
+    background: #fff;
+}
+.grey textarea {
+    height: 150px;
+}
+.grey input[type="submit"] {
+    border: 2px solid #b30000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #b30000;
+    text-transform: uppercase;
+    background: transparent;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.grey input[type="submit"]:hover {
+    background: #b30000;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Rezervace*/
+.rezervace {
+    margin: 100px 0;
+    text-align: center;
+}
+
+/*Galerie*/
+.obsah img {
+    /*width: 24%;*/
+    height: 200px;
+    width: auto;
+}
+.obrazky {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn {
+    border: 1px solid #000;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.btn:hover {
+    color: #fff;
+    background: #b30000;
+}

@@ -1,0 +1,5 @@
+#toto je komentář
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.+) index.php?stranka=$1 [L,QSA]
